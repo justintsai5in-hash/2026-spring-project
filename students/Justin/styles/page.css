@@ -51,20 +51,19 @@ footer {
   box-shadow: 10px 5px 5px 0 rgba(77, 40, 40, 0.419);
   border: 15px solid grey;
   padding: 20px;
-  width: 200px;
 }
 
-button { 
+button {
   /* 文字色：香檳金 */
-  color: #f7e7ce; 
+  color: #f7e7ce;
   /* 邊框：古銅金 */
-  border: 5px solid #d4af37; 
-  padding: 10px; 
-  width: 110px; 
+  border: 5px solid #d4af37;
+  padding: 10px;
+  width: 110px;
   /* 背景：深琥珀到焦糖色 */
-  background-image: linear-gradient(to bottom, #8b4513, #b8860b); 
-  border-radius: 80px; 
-  
+  background-image: linear-gradient(to bottom, #8b4513, #b8860b);
+  border-radius: 80px;
+
   position: relative;
   overflow: hidden;
   /* 增加一點深色陰影 */
@@ -79,68 +78,95 @@ button::after {
   position: absolute;
   top: -50%;
   left: -150%;
-  width: 80%; /* 寬度增加，讓光影感更飽滿 */
+  width: 80%;
+  /* 寬度增加，讓光影感更飽滿 */
   height: 200%;
   /* 暖白到金色的漸層 */
-  background: linear-gradient(
-    to right, 
-    transparent, 
-    rgba(255, 250, 205, 0.1), 
-    rgba(255, 255, 255, 0.4), 
-    rgba(255, 250, 205, 0.1), 
-    transparent
-  );
+  background: linear-gradient(to right,
+      transparent,
+      rgba(255, 250, 205, 0.1),
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 250, 205, 0.1),
+      transparent);
   transform: rotate(35deg);
   /* 動畫時間設為 2.5s，掃描感更優雅 */
   animation: liquid-gold 2.5s infinite ease-in-out;
 }
 
 @keyframes liquid-gold {
-  0% { left: -150%; }
-  45% { left: 150%; } /* 控制掃過速度 */
-  100% { left: 150%; }
+  0% {
+    left: -150%;
+  }
+
+  45% {
+    left: 150%;
+  }
+
+  /* 控制掃過速度 */
+  100% {
+    left: 150%;
+  }
 }
 
-#Calculator{
-  border-color:rgb(255, 138, 138) ;
-    background-image: linear-gradient(to bottom, rgb(252, 218, 83), rgb(252, 243, 83));
-border-width: 10px;
-border-style:ridge;
-display: inline-block;
+#Calculator {
+  border-color: rgb(255, 138, 138);
+  background-image: linear-gradient(to bottom, rgb(252, 218, 83), rgb(252, 243, 83));
+  border-width: 10px;
+  border-style: ridge;
+  display: inline-block;
 }
 
-#counter { 
-  border-color: rgb(83, 252, 244); 
-  background-image: linear-gradient(to bottom, rgb(83, 252, 244), rgb(66, 144, 87)); 
-  border-width: 10px; 
-  border-style: ridge; 
-   min-width: 40px; 
+#counter {
+  border-color: rgb(83, 252, 244);
+  background-image: linear-gradient(to bottom, rgb(83, 252, 244), rgb(66, 144, 87));
+  border-width: 10px;
+  border-style: ridge;
+  min-width: 40px;
   max-width: 650px;
-  
+
   /* 套用動畫：2秒一次、平滑循環 */
   animation: border-dance 2s infinite ease-in-out;
 }
 
-#Calculator-buttons { 
-  background-image: linear-gradient(to bottom, rgb(252, 243, 83), rgb(114, 144, 66)); 
-  border-width: 10px; 
-  border-style: ridge; 
-  min-width: 100px; 
-  max-width: 10000px; 
-  
+#Calculator-buttons {
+  background-image: linear-gradient(to bottom, rgb(252, 243, 83), rgb(114, 144, 66));
+  border-width: 10px;
+  border-style: ridge;
+  min-width: 100px;
+  max-width: 10000px;
+
   /* 套用同一個動畫，但稍微延遲一下，製造層次感 */
   animation: border-dance 2.5s infinite ease-in-out;
 }
 
 /* 定義特效：顏色變換 + 輕微縮放 */
 @keyframes border-dance {
-  0%, 100% {
-    transform: scale(1); /* 原始大小 */
-    filter: hue-rotate(0deg); /* 原始顏色 */
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  0%,
+  100% {
+    transform: scale(1);
+    /* 原始大小 */
+    filter: hue-rotate(0deg);
+    /* 原始顏色 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
+
   50% {
-    transform: scale(1.02); /* 變大 2% */
-    box-shadow: 0 0 25px rgba(255,255,255,0.4); /* 增加發光感 */
+    transform: scale(1.02);
+    /* 變大 2% */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    /* 增加發光感 */
   }
+}
+
+.nana {
+  font-size: 48px;
+}
+
+.line {
+  display: flex;
+  gap: 15px;
+  justify-content:
+    space-between;
+  align-items: center;
 }
