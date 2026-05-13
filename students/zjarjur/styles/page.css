@@ -3,9 +3,9 @@
 }
 
 body {
-  max-width: 900px;
   margin: 0;
   padding: 0;
+  padding-top: 150px;
   color: azure;
   background-color: black;
   /*font-family: "Kumar One", serif;*/
@@ -13,7 +13,12 @@ body {
 }
 
 header {
-  background-color: gold;
+  background-image:
+    linear-gradient(to bottom, rgb(218, 213, 252),
+      rgb(176, 150, 1));
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(88, 22, 22);
 }
 
 .light-mode {
@@ -23,7 +28,7 @@ header {
 }
 
 .center {
-  
+
   max-width: 940px;
   padding: 20px;
   margin-left: auto;
@@ -41,7 +46,7 @@ footer {
 }
 
 .light-mode footer {
-  color: white;
+  color: rgb(238, 216, 216);
   background-color: black;
   /* TODO Add footer light mode styles here. */
 }
@@ -59,35 +64,59 @@ button {
   min-width: 40px;
   padding: 4px 8px;
 }
-#calculator-buttons {
-  padding: 4px;
-  margin: 4px;
-  max-width: 140px;
-  border-style: solid;
-  border-color:red;
-  border-width: 2px;
-  background-color: black;
+
+.big {
+  font-size: 48px;
 }
 
-#counter {
-  padding: 4px;
-  margin: 4px;
-  /*max-width: 140px;*/
-  border-style: solid;
-  border-color:black;
-  border-width: 2px;
-  background-color:white;
+
+.line {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.coloring1 {
+  background-image: linear-gradient(to bottom, rgb(146, 136, 209), gold);
   color: black;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(88, 22, 22);
 }
 
-#calculator {
-  padding: 4px;
-  margin: 4px;
-  display:inline-block;
-  /*max-width: 160px;*/
-  border-style: solid;
-  border-color:green;
-  border-width: 2px;
-  background-color:silver;
-  color:white;
+.menu-bar {
+  /* position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;  Ensures menu stays above other content */
+  background-color: #333;
+}
+
+.underline {
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+  border-bottom: 2px solid rgb(255, 0, 50);
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.tab {
+  display: inline-block;
+  color: red;
+  background-color: silver;
+  border: 2px solid rgb(255, 0, 50);
+  border-bottom: none;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.light-mode .tab {
+  border-color: black;
 }
