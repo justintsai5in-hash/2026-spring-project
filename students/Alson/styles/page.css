@@ -97,3 +97,19 @@ footer {
 .light-mode .tab {
     border-color: black;
 }
+
+h1 {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.light-mode h1 {
+    background-color: black;
+    color: white;
+}
+
+main {
+    min-height: 50vh;
+    background-color: rgb(255, 255, 255 / 0.1);
+}
