@@ -120,3 +120,16 @@ button {
 .light-mode .tab {
   border-color: black;
 }
+
+a {
+  color: darkblue;
+}
+
+.light-mode a {
+  color: red;
+}
+
+main {
+  min-height: 200vh;
+  ;
+}
