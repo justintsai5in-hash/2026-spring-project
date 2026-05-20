@@ -14,6 +14,15 @@ body {
   color: black;
 }
 
+main {
+  min-height: 50vh;
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.light-mode main {
+  background-color: white;
+}
+
 .center {
   width: 940px;
   padding: 20px;
@@ -66,7 +75,6 @@ button {
 
 h1 {
   padding: 10px;
-  font-family: "Bytesized", sans-serif;
   background-color: white;
   color: black;
 }
@@ -91,13 +99,4 @@ footer {
 
 .light-mode footer {
   background-image: linear-gradient(to bottom, rgb(170, 170, 255), blue);
-}
-
-main {
-  min-height: 50vh;
-  background-color: rgb(255, 255, 255) / 0.1;
-}
-
-.light-mode main {
-  background-color: white;
 }
