@@ -97,6 +97,7 @@ a {
 }
 
 main{
+    display:flow-root;
     min-height: 50vh;
     background-color: aliceblue/0.1;
 }
