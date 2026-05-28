@@ -4,17 +4,31 @@
 let myGraffiti = document.getElementById("my-graffiti");
 let surface = myGraffiti.getContext("2d");
 let cleanButton = document.getElementById("clean")
+let colorInput=document.getElementById("color-input")
+let sizeInput=document.getElementById("size-input")
 /*
  *Graffiti style
  */
-surface.lineWidth = 13;
+
 surface.lineJoin = "round"
-surface.strokeStyle = "red";
+function changeColor(){
+surface.strokeStyle = colorInput.value;
+console.log(colorInput.value)
+}
+changeColor();
+colorInput.addEventListener("change", changeColor);
+
+function changeSize(){
+surface.lineWidth = sizeInput.value
+console.log(sizeInput.value)
+}
+changeSize();
+sizeInput.addEventListener("change", changeSize);
 
 /*
  *shapes
  */
-function shapes() {
+/*function shapes() {
     surface.rect(150, 200, 100, 100);
     surface.stroke();
 
@@ -34,6 +48,7 @@ function shapes() {
 
 }
 shapes();
+*/
 /*
  *Clean
  */

@@ -139,3 +139,7 @@ main {
 .Essay{
   font-size:large;
 }
+.input{
+   margin:10px ;
+ display: grid;
+}
