@@ -1,4 +1,7 @@
 import { CanvasEraser } from "../../../scripts/canvas-eraser.js";
+import { StickyClickyImage } from "../../../scripts/sticky-clicky-image.js";
+const StickyMustache = new StickyClickyImage ('mustache');
+StickyMustache.setContainerID('dog-picture');
 /*
 * HTML
 */
