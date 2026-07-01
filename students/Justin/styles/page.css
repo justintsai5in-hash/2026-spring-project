@@ -88,6 +88,10 @@ button {
   font-weight: 600;
   cursor: pointer;
 }
+#simon button{
+  width: auto;
+  background-image: none;
+}
 
 /* 這裡是流金特效 */
 button::after {
